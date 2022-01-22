@@ -1,5 +1,3 @@
-import { SetUserName } from '../actions/user-info.action';
-
 type Order = {
     id: string;
     name: string;
