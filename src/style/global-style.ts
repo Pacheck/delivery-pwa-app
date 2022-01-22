@@ -2,12 +2,16 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 body {
-    background-color: red;
+    background-color: white;
 }
     * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
         text-decoration: none;
+    }
+
+    .App {
+        height: 100vh;
     }
 `;
