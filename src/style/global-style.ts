@@ -10,4 +10,8 @@ body {
         box-sizing: border-box;
         text-decoration: none;
     }
+
+    .App {
+        height: 100vh;
+    }
 `;
