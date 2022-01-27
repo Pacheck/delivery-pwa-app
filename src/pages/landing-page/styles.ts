@@ -4,7 +4,7 @@ export const Container = styled.div<{ bgColor: string }>`
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: ${props => props.bgColor}
+    background-color: ${props => props.bgColor};
 `;
 
 export const Content = styled.div`
