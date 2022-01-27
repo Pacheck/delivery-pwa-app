@@ -5,6 +5,8 @@ export const Container = styled.div<{ bgColor: string }>`
     display: flex;
     justify-content: center;
     background-color: ${props => props.bgColor};
+
+    transition: all 0.6s;
 `;
 
 export const Content = styled.div`

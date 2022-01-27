@@ -6,13 +6,14 @@ type SpanProps = { mainTextColor: string }
 export const Container = styled.div<ContainerProps>`
     background-color: ${props => props.mainColor};
     height: 30px;
-    background-color: #FF6B00;
     height: 50px;
     width: 100%;
     position: fixed;
     display: flex;
     justify-content: end;
     padding: 0 10%;
+
+    transition: all 0.6s ;
 `;
 
 export const ThemeMode = styled.div<SpanProps>`

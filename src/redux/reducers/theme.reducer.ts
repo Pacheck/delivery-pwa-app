@@ -12,7 +12,7 @@ const darkTheme = {
     MAIN_COLOR: '#121212',
     MAIN_TEXT_COLOR: '#f3f3f3',
     BACKGROUND_COLOR: '#201e1e',
-    MAIN_BUTTON: '#d1c708'
+    MAIN_BUTTON: '#CF80FF',
 }
 
 const lightTheme = {
