@@ -16,6 +16,7 @@ export const Content = styled.div`
 `;
 
 export const TextBox = styled.div`
+    color: #803600;
     display:flex;
     flex-direction: column;
     text-align: center;
@@ -36,13 +37,16 @@ export const TextBox = styled.div`
 
 export const InputCEP = styled.div`
     input {
+        color: #803600;
         text-align: center;
         width: clamp(270px, 80vw, 400px);
         height: 25px;
         border-radius: 10px;
+        border-color: #803600;
     }
 
     input::placeholder {
+        color: #803600;
         text-align: center;
         letter-spacing: 1px;
     }
@@ -55,7 +59,7 @@ export const CTA = styled.div`
         font-weight: 700;
         width: clamp(100px, 40vw, 140px);
         height: 25px;
-        background-color: red;
+        background-color: #FF6B00;
         border: 0px;
         border-radius: 10px;
     }
