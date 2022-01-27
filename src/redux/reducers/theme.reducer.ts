@@ -2,10 +2,10 @@ import { ThemeAction, ThemeValueType } from "../actions/theme.action";
 
 const initialState = {
     isDarkMode: false,
-    MAIN_COLOR: '#d90d0d',
+    MAIN_COLOR: '#FF6B00',
     MAIN_TEXT_COLOR: '#121212',
     BACKGROUND_COLOR: '#fff',
-    MAIN_BUTTON: '#d90d0d'
+    MAIN_BUTTON: '#FF6B00'
 };
 
 const darkTheme = {
@@ -16,10 +16,10 @@ const darkTheme = {
 }
 
 const lightTheme = {
-    MAIN_COLOR: '#d90d0d',
-    MAIN_TEXT_COLOR: '#121212',
+    MAIN_COLOR: '#FF6B00',
+    MAIN_TEXT_COLOR: '#803600',
     BACKGROUND_COLOR: '#fff',
-    MAIN_BUTTON: '#d90d0d'
+    MAIN_BUTTON: '#FF6B00'
 }
 
 export const ThemeReducer = (state = initialState, action: ThemeAction) => {

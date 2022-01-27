@@ -38,13 +38,16 @@ export const TextBox = styled.div<{ txtColor: string }>`
 
 export const InputCEP = styled.div`
     input {
+        color: #803600;
         text-align: center;
         width: clamp(270px, 80vw, 400px);
         height: 25px;
         border-radius: 10px;
+        border-color: #803600;
     }
 
     input::placeholder {
+        color: #803600;
         text-align: center;
         letter-spacing: 1px;
     }
