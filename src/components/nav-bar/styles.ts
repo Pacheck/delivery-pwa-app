@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-    background-color: #FF6B00;
+type ContainerProps = { mainColor: string }
+type SpanProps = { mainTextColor: string }
+
+export const Container = styled.div<ContainerProps>`
+    background-color: ${props => props.mainColor};
+    height: 30px;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -9,9 +13,10 @@ export const Container = styled.div`
     justify-content: end;
     padding: 0 10%;
 
+    transition: all 0.6s ;
 `;
 
-export const ThemeMode = styled.div`
+export const ThemeMode = styled.div<SpanProps>`
     display: flex;
     flex-direction: column;
     align-content: center;

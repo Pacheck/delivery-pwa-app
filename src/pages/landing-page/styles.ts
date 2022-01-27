@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div<{ bgColor: string }>`
     height: 100%;
     display: flex;
     justify-content: center;
+    background-color: ${props => props.bgColor};
+
+    transition: all 0.6s;
 `;
 
 export const Content = styled.div`
@@ -15,12 +18,12 @@ export const Content = styled.div`
     gap: 50px;
 `;
 
-export const TextBox = styled.div`
-    color: #803600;
+export const TextBox = styled.div<{ txtColor: string }>`
     display:flex;
     flex-direction: column;
     text-align: center;
     gap: 15px;
+    color: ${props => props.txtColor};
 
     h1 {
         font-size: 1.8rem;
@@ -52,14 +55,14 @@ export const InputCEP = styled.div`
     }
 `;
 
-export const CTA = styled.div`
+export const CTA = styled.div<{ btnColor: string }>`
     button {
         color: white;
         letter-spacing: 3px;
         font-weight: 700;
         width: clamp(100px, 40vw, 140px);
         height: 25px;
-        background-color: #FF6B00;
+        background-color: ${props => props.btnColor};
         border: 0px;
         border-radius: 10px;
     }

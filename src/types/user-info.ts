@@ -9,7 +9,11 @@ export type Order = {
 export type UserInformation = {
     name: string;
     cpf: string;
-    address: Object;
-    payment: Object;
+}
+
+export type OrderProps = {
+    id: string;
+    address: {},
+    payment: {},
     orders: Array<Order>
 }
